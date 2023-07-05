@@ -138,27 +138,27 @@ const BlogDetail = () => {
                                                             className="elementor-icon-list-item elementor-repeater-item-cf73d9f elementor-inline-item"
                                                             itemProp="author"
                                                         >
-                                                            <a role="btn">
+                                                            <Link to={""} role="btn">
                                                                 <span className="elementor-icon-list-icon">
                                                                     <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M406.5 399.6C387.4 352.9 341.5 320 288 320H224c-53.5 0-99.4 32.9-118.5 79.6C69.9 362.2 48 311.7 48 256C48 141.1 141.1 48 256 48s208 93.1 208 208c0 55.7-21.9 106.2-57.5 143.6zm-40.1 32.7C334.4 452.4 296.6 464 256 464s-78.4-11.6-110.5-31.7c7.3-36.7 39.7-64.3 78.5-64.3h64c38.8 0 71.2 27.6 78.5 64.3zM256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-272a40 40 0 1 1 0-80 40 40 0 1 1 0 80zm-88-40a88 88 0 1 0 176 0 88 88 0 1 0 -176 0z" /></svg>
                                                                 </span>
                                                                 <span className="elementor-icon-list-text elementor-post-info__item elementor-post-info__item--type-author">
                                                                     superadmin{" "}
                                                                 </span>
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                         <li
                                                             className="elementor-icon-list-item elementor-repeater-item-9368dee elementor-inline-item"
                                                             itemProp="datePublished"
                                                         >
-                                                            <a role="btn">
+                                                            <Link to={""} role="btn">
                                                                 <span className="elementor-icon-list-icon">
                                                                     <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M128 0c17.7 0 32 14.3 32 32V64H288V32c0-17.7 14.3-32 32-32s32 14.3 32 32V64h48c26.5 0 48 21.5 48 48v48H0V112C0 85.5 21.5 64 48 64H96V32c0-17.7 14.3-32 32-32zM0 192H448V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V192zm64 80v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm128 0v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H208c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16H336zM64 400v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H80c-8.8 0-16 7.2-16 16zm144-16c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H208zm112 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V400c0-8.8-7.2-16-16-16H336c-8.8 0-16 7.2-16 16z" /></svg>
                                                                 </span>
                                                                 <span className="elementor-icon-list-text elementor-post-info__item elementor-post-info__item--type-date">
                                                                     {months[(new Date(blog.createdAt)).getMonth()]} {(new Date(blog.createdAt)).getDate()}, {(new Date(blog.createdAt)).getFullYear()}{" "}
                                                                 </span>
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                         <li className="elementor-icon-list-item elementor-repeater-item-dfc5f70 elementor-inline-item">
                                                             <span className="elementor-icon-list-icon">
@@ -172,14 +172,14 @@ const BlogDetail = () => {
                                                             className="elementor-icon-list-item elementor-repeater-item-a15cc5d elementor-inline-item"
                                                             itemProp="commentCount"
                                                         >
-                                                            <a role="btn">
+                                                            <Link to={""} role="btn">
                                                                 <span className="elementor-icon-list-icon">
                                                                     <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M256 448c141.4 0 256-93.1 256-208S397.4 32 256 32S0 125.1 0 240c0 45.1 17.7 86.8 47.7 120.9c-1.9 24.5-11.4 46.3-21.4 62.9c-5.5 9.2-11.1 16.6-15.2 21.6c-2.1 2.5-3.7 4.4-4.9 5.7c-.6 .6-1 1.1-1.3 1.4l-.3 .3 0 0 0 0 0 0 0 0c-4.6 4.6-5.9 11.4-3.4 17.4c2.5 6 8.3 9.9 14.8 9.9c28.7 0 57.6-8.9 81.6-19.3c22.9-10 42.4-21.9 54.3-30.6c31.8 11.5 67 17.9 104.1 17.9zM128 208a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm128 0a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm96 32a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z" /></svg>
                                                                 </span>
                                                                 <span className="elementor-icon-list-text elementor-post-info__item elementor-post-info__item--type-comments">
                                                                     No Comments{" "}
                                                                 </span>
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                     </ul>
                                                 </div>
