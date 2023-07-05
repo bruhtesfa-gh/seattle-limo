@@ -540,7 +540,7 @@ const Home = () => {
                                     className="attachment-full size-full wp-image-56"
                                     alt=""
                                     loading="lazy"
-                                    srcSet="/images/ildar-garifullin-aAEe0jM1vno-unsplash-scaled-1.jpg 2560w, /images/ildar-garifullin-aAEe0jM1vno-unsplash-scaled-1-300x200.jpg 300w, /images/ildar-garifullin-aAEe0jM1vno-unsplash-scaled-1-1024x682.jpg 1024w, /images/ildar-garifullin-aAEe0jM1vno-unsplash-scaled-1-768x512.jpg 768w, /images/ildar-garifullin-aAEe0jM1vno-unsplash-scaled-1-1536x1024.jpg 1536w, /images/ildar-garifullin-aAEe0jM1vno-unsplash-scaled-1-2048x1365.jpg 2048w"
+                                    srcSet="/images/ildar-garifullin-aAEe0jM1vno-unsplash-scaled-1-2048x1365.jpg 2560w, /images/ildar-garifullin-aAEe0jM1vno-unsplash-scaled-1-2048x1365.jpg 300w, /images/ildar-garifullin-aAEe0jM1vno-unsplash-scaled-1-2048x1365.jpg 1024w, /images/ildar-garifullin-aAEe0jM1vno-unsplash-scaled-1-2048x1365.jpg 768w, /images/ildar-garifullin-aAEe0jM1vno-unsplash-scaled-1-2048x1365.jpg 1536w, /images/ildar-garifullin-aAEe0jM1vno-unsplash-scaled-1-2048x1365.jpg 2048w"
                                     sizes="(max-width: 2560px) 100vw, 2560px"
                                 />
                             </div>
