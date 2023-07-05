@@ -311,37 +311,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div
-                    className="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-61c4943f"
-                    data-id="61c4943f"
-                    data-element_type="column"
-                >
-                    <div className="elementor-widget-wrap elementor-element-populated">
-                        <div
-                            className="elementor-element elementor-element-8295f5a elementor-widget elementor-widget-google_maps"
-                            data-id="8295f5a"
-                            data-element_type="widget"
-                            data-widget_type="google_maps.default"
-                        >
-                            <div className="elementor-widget-container">
-                                <style
-                                    dangerouslySetInnerHTML={{
-                                        __html:
-                                            "\n                                    /*! elementor - v3.14.0 - 26-06-2023 */\n                                    .elementor-widget-google_maps .elementor-widget-container {\n                                        overflow: hidden\n                                    }\n\n                                    .elementor-widget-google_maps .elementor-custom-embed {\n                                        line-height: 0\n                                    }\n\n                                    .elementor-widget-google_maps iframe {\n                                        height: 300px\n                                    }\n\n                                "
-                                    }}
-                                />
-                                <div className="elementor-custom-embed">
-                                    <iframe
-                                        loading="lazy"
-                                        src="https://maps.google.com/maps?q=Los%20Angeles&t=m&z=10&output=embed&iwloc=near"
-                                        title="Los Angeles"
-                                        aria-label="Los Angeles"
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </section>
         <section
@@ -365,6 +335,30 @@ const Footer = () => {
                         >
                             <div className="elementor-widget-container">
                                 <p>© Copyright 2022 Seattle Limo. All Rights Reserved. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    className="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-2cab7607"
+                    data-id="2cab7607"
+                    data-element_type="column"
+                >
+                    <div className="elementor-widget-wrap elementor-element-populated">
+                        <div
+                            className="elementor-element elementor-element-9b39b3c elementor-icon-list--layout-inline elementor-align-right elementor-mobile-align-center elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+                            data-id="9b39b3c"
+                            data-element_type="widget"
+                            data-widget_type="icon-list.default"
+                        >
+                            <div className="elementor-widget-container">
+                                <ul className="elementor-icon-list-items elementor-inline-items">
+                                    <li className="elementor-icon-list-item elementor-inline-item" style={{ margin: "auto", listStyle: "none" }}>
+                                        <span className="elementor-icon-list-text" >
+                                            Developed by <a href="http://fejleszto-tech.com/">Fejlesztő technology</a>
+                                        </span>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
