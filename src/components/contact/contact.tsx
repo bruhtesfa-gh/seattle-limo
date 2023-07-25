@@ -371,7 +371,7 @@ const Contact = () => {
                                                                 />{" "}
                                                             </span>
                                                             <span className="elementor-icon-list-text">
-                                                                info@seattle-limo.com
+                                                                info@seattle-skyline-limo.com
                                                             </span>
                                                         </li>
                                                     </ul>
@@ -394,7 +394,7 @@ const Contact = () => {
                                                         Our office is open Monday through Friday from 9am to 5pm. You can reach us by phone at 206-555-1234 or toll free at 1-800-555-1234. For after hours inquiries, please leave us a message and we will get back to you promptly the next business day.
                                                     </p>
                                                     <p>
-                                                        You can also email us 24/7 at info@seattlelimoservice.com. We try to respond to all inquiries within 24 hours. Our physical office is located at 123 Main St, Seattle, WA 98102. Feel free to stop in if you are in the area!
+                                                        You can also email us 24/7 at info@seattle-skyline-limo.com. We try to respond to all inquiries within 24 hours. Our physical office is located at 123 Main St, Seattle, WA 98102. Feel free to stop in if you are in the area!
                                                     </p>
                                                 </div>
                                             </div>
