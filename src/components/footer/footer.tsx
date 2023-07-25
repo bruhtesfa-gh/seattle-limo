@@ -243,11 +243,11 @@ const Footer = () => {
                         >
                             <div className="elementor-widget-container">
                                 <p>
-                                    <strong>Mon-Sun: </strong>
-                                    <br />7 AM – 9 PM
+                                    <strong>Mon-Mon: </strong>
+                                    <br />12 AM – 12 AM
                                 </p>
                                 <p>
-                                    <strong>Fri-Sat: </strong>Day off
+                                    {/* <strong>Fri-Sat: </strong>Day off */}
                                     <br />
                                     <br />
                                 </p>
@@ -306,8 +306,7 @@ const Footer = () => {
                                         <i>+1 123-456-7890</i>
                                     </b>
                                 </p>
-                                <p>info@example.com</p>
-                                <p>info@example.com</p>
+                                <p>info@seattle-skyline-limo.com</p>
                             </div>
                         </div>
                     </div>

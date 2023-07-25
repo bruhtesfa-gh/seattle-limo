@@ -25,6 +25,17 @@ const Fleets = () => {
     const submitHandler = async (e: any) => {
         e.preventDefault();
         let response = null;
+        if (name.split(" ").length < 2)
+            toast.error('Please enter your full name', {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+            });
         try {
             response = await axios.post('https://limo-backend.onrender.com/book',
                 {
@@ -32,11 +43,11 @@ const Fleets = () => {
                     'luggageCount': +luggage,
                     'personCount': +passengers,
                     'toAddress': pickup,
-                    'fromAddress': pickup,
+                    'fromAddress': dropoff,
                     'phoneNumber': phone,
                     'email': email,
-                    'lastName': name,
-                    'firstName': name,
+                    'lastName': name.split(" ").length > 1 ? name.split(" ")[0] : name,
+                    'firstName': name.split(" ").length > 1 ? name.split(" ")[1] : name,
                     'journeyDate': date + ':00.000Z',
                     'vehicleId': bookingVehicle.id
                 });
@@ -304,11 +315,11 @@ const Fleets = () => {
                                                 decoding="async"
                                                 width={2560}
                                                 height={1707}
-                                                src={bookingVehicle.id && bookingVehicle.img}
+                                                src={bookingVehicle.id && bookingVehicle.img.replace("http:", "https:")}
                                                 className="attachment-full size-full wp-image-57"
                                                 alt=""
                                                 loading="lazy"
-                                                srcSet={bookingVehicle.id && `${bookingVehicle.img} 2560w`}
+                                                srcSet={bookingVehicle.id && `${bookingVehicle.img.replace("http:", "https:")} 2560w`}
                                                 sizes="(max-width: 2560px) 100vw, 2560px"
                                             />{" "}
                                         </div>
@@ -427,6 +438,24 @@ const Fleets = () => {
                                                     onChange={e => setPickup(e.target.value)}
                                                 />
                                             </div>
+                                            <div className="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-100">
+                                                <label
+                                                    htmlFor="form-field-address"
+                                                    className="elementor-field-label elementor-screen-only"
+                                                >
+                                                    Drop-Off Address{" "}
+                                                </label>
+                                                <input
+                                                    size={1}
+                                                    type="text"
+                                                    name="form_fields[address]"
+                                                    id="form-field-address"
+                                                    className="elementor-field elementor-size-sm  elementor-field-textual"
+                                                    placeholder="Pick-Up Address"
+                                                    required={true}
+                                                    onChange={e => setDropoff(e.target.value)}
+                                                />
+                                            </div>
                                             <div className="elementor-field-type-date elementor-field-group elementor-column elementor-field-group-field_4 elementor-col-100">
                                                 <label
                                                     htmlFor="form-field-field_date"
@@ -485,7 +514,7 @@ const Fleets = () => {
                                                     htmlFor="form-field-message"
                                                     className="elementor-field-label elementor-screen-only"
                                                 >
-                                                    Event or Occasion{" "}
+                                                    Notes{" "}
                                                 </label>
                                                 <textarea
                                                     className="elementor-field-textual elementor-field  elementor-size-sm"

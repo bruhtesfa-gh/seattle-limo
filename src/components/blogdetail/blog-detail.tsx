@@ -64,7 +64,8 @@ const BlogDetail = () => {
                 data-settings='{"background_background":"classic"}'
                 style={{
                     backgroundColor: "#161938",
-                    backgroundImage: `url(${blog.img})`,
+                    backgroundImage: `url(${blog.img ?
+                        blog.img.includes('http:') ? 'https:' + blog.img.substr(5) : blog.img : ''})`,
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
                     backgroundPosition: "center center",
@@ -120,7 +121,7 @@ const BlogDetail = () => {
                                 data-element_type="section"
                             >
                                 <div className="elementor-container elementor-column-gap-default">
-                                    <div
+                                    {/* <div
                                         className="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-30783def"
                                         data-id="30783def"
                                         data-element_type="column"
@@ -185,7 +186,7 @@ const BlogDetail = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                     <div
                                         className="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-45df0e9d"
                                         data-id="45df0e9d"
@@ -300,11 +301,13 @@ const BlogDetail = () => {
                                         <img
                                             width={2000}
                                             height={1333}
-                                            src={blog.img}
+                                            src={blog.img ?
+                                                blog.img.includes('http:') ? 'https:' + blog.img.substr(5) : blog.img : ''}
                                             className="attachment-full size-full wp-image-100"
                                             alt="Paper with checklist order held by young female shopper looking through it"
                                             loading="lazy"
-                                            srcSet={blog.img + " 2000w"}
+                                            srcSet={blog.img ?
+                                                blog.img.includes('http:') ? 'https:' + blog.img.substr(5) : blog.img : '' + " 2000w"}
                                             sizes="(max-width: 2000px) 100vw, 2000px"
                                         />
                                     </div>

@@ -3,7 +3,7 @@ export const BASE_URL = "https://limo-backend.onrender.com/";
 const axios = ax.default.create({
     baseURL: BASE_URL,
 });
-export async function getVehicles(page = 1, limit = 3) {
+export async function getVehicles(page = 1, limit = 10) {
     const { data } = await axios.get(`/vehicle?page=${page}&limit=${limit}`);
     return data;
 }

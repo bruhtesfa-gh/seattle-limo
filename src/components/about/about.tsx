@@ -224,20 +224,10 @@ const About = (props: any) => {
                                                     }}
                                                 />
                                                 <p>
-                                                    Lorem Ipsum is simply dummy text of the printing and
-                                                    typesetting industry. Lorem Ipsum has been the
-                                                    industry’s standard dummy text ever since the 1500s,
-                                                    when an unknown printer took a galley of type and
-                                                    scrambled it to make a type specimen book. It has
-                                                    survived not only five centuries, but also the leap
-                                                    into electronic typesetting, remaining essentially
-                                                    unchanged.
+                                                    Seattle Limosine Service has been proudly serving the Seattle area since 2005. We got our start with just two luxury sedans and a passion for offering exceptional transportation experiences. Over the years, we've grown our fleet size and expanded our service area while maintaining the high standards of quality, reliability, and personalized care that our clients expect.
                                                 </p>
                                                 <p>
-                                                    It was popularised in the 1960s with the release of
-                                                    Letraset sheets containing Lorem Ipsum passages, and
-                                                    more recently with desktop publishing software like
-                                                    Aldus PageMaker including versions of Lorem Ipsum.
+                                                    Today, we operate a diversified fleet of luxury SUVs, vans, and sedan limousines. In total, we have over 15 late model vehicles available to serve the Puget Sound region. Our team of professional chauffeurs are fully trained, certified, and experienced in ensuring every ride is comfortable, safe, and enjoyable. We take pride in knowing all of our clients by name and tailoring our service to match their specific needs and preferences. Whether an essential airport run or an extravagant night out, we strive to make every ride feel like a memorable luxury experience. Our mission is simple - to consistently deliver supreme ground transportation with a personal touch, one satisfied client at a time.
                                                 </p>
                                             </div>
                                         </div>

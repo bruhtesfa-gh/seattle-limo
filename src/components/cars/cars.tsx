@@ -84,7 +84,7 @@ const Cars = (props: any) => {
                                                    <div className="elementor-image-box-div">
                                                       <img
                                                          decoding="async"
-                                                         src={car.img}
+                                                         src={car.img.replace("http:", "https:")}
                                                          title={car.name}
                                                          alt={car.name}
                                                          loading="lazy"

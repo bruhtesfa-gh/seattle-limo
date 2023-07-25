@@ -213,11 +213,13 @@ const Blog = () => {
                                                             decoding="async"
                                                             width={2000}
                                                             height={1333}
-                                                            src={blog.img}
+                                                            src={blog.img ?
+                                                                blog.img.includes('http:') ? 'https:' + blog.img.substr(5) : blog.img : ''}
                                                             className="attachment-full size-full wp-image-98"
                                                             alt="Hike in Patagonia"
                                                             loading="lazy"
-                                                            srcSet={blog.img}
+                                                            srcSet={blog.img ?
+                                                                blog.img.includes('http:') ? 'https:' + blog.img.substr(5) : blog.img : ''}
                                                             sizes="(max-width: 2000px) 100vw, 2000px"
                                                         />
                                                     </div>
