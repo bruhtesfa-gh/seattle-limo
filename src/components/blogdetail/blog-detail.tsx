@@ -1,22 +1,9 @@
 import { Link, useParams } from "react-router-dom";
 import './blog-detail.css';
 import { useEffect, useState } from "react";
-import { getBlog, getBlogs } from "../../api/api";
+import { getBlogs } from "../../api/api";
 import Spinner from "../loading/loading";
-const months = [
-    "Jan",
-    "Feb",
-    "Mar",
-    "Apr",
-    "May",
-    "Jun",
-    "Jul",
-    "Aug",
-    "Sep",
-    "Oct",
-    "Nov",
-    "Dec"
-]
+
 const BlogDetail = () => {
     const { slug } = useParams();
     const [loading, setLoading] = useState(false);
@@ -39,7 +26,6 @@ const BlogDetail = () => {
         }).catch((err) => {
             setError(true);
             setLoading(false);
-            console.log(err);
         });
         window.scrollTo(0, 0);
     }, []);
@@ -307,7 +293,7 @@ const BlogDetail = () => {
                                             alt="Paper with checklist order held by young female shopper looking through it"
                                             loading="lazy"
                                             srcSet={blog.img ?
-                                                blog.img.includes('http:') ? 'https:' + blog.img.substr(5) : blog.img : '' + " 2000w"}
+                                                (blog.img.includes('http:') ? 'https:' + blog.img.substr(5) : blog.img + " 2000w") : ''}
                                             sizes="(max-width: 2000px) 100vw, 2000px"
                                         />
                                     </div>

@@ -9,7 +9,7 @@ const Contact = () => {
     const [message, setMessage] = React.useState('');
     const messageHandler = (e: any) => {
         e.preventDefault();
-        const phoneregex = /^(1\s?)?(\d{3}|\(\d{3}\))[\s\-]?\d{3}[\s\-]?\d{4}$/gm;
+        const phoneregex = /^(1\s?)?(\d{3}|\(\d{3}\))[\s-]?\d{3}[\s-]?\d{4}$/gm;
         const emailregex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         if (name === '') {
             toast.error('Please enter name');
