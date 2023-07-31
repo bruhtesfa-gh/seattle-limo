@@ -24,13 +24,11 @@ const Blog = () => {
     useEffect(() => {
         setLoading(true);
         getBlogs().then((res) => {
-            console.log(res[0]);
             setLoading(false);
             setBlogs(res);
         }).catch((err) => {
             setLoading(false);
             setError(true);
-            console.log(err);
         });
     }, []);
     return <div
