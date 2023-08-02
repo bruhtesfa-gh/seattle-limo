@@ -37,7 +37,7 @@ const Fleets = () => {
                 theme: "light",
             });
         try {
-            response = await axios.post('https://seattle-skyline-limo-backend.onrender.com/book',
+            response = await axios.post('https://seattle-skyline-limo-server.onrender.com/book',
                 {
                     'description': comments == '' ? 'No comments' : comments,
                     'luggageCount': +luggage,
