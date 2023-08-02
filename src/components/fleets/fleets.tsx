@@ -52,16 +52,21 @@ const Fleets = () => {
                     'vehicleId': bookingVehicle.id
                 });
             if (response.status == 201) {
-                toast.success('Successfully booked, reaching you shortly.', {
-                    position: "top-right",
-                    autoClose: 5000,
-                    hideProgressBar: false,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined,
-                    theme: "light",
-                });
+                // toast.success('Successfully booked, reaching you shortly.', {
+                //     position: "top-right",
+                //     autoClose: 5000,
+                //     hideProgressBar: false,
+                //     closeOnClick: true,
+                //     pauseOnHover: true,
+                //     draggable: true,
+                //     progress: undefined,
+                //     theme: "light",
+                // });
+                //@ts-ignore
+                if (window.showSuccessBooking !== undefined) {
+                    //@ts-ignore
+                    window.showSuccessBooking('success-message');
+                }
             }
 
         } catch (error: any) {
