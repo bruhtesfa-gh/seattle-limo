@@ -41,6 +41,7 @@ const Fleets = () => {
       response = await axios.post(BASE_URL + "book", {
         description: comments == "" ? "No comments" : comments,
         luggageCount: +luggage,
+        driverGender,
         personCount: +passengers,
         toAddress: pickup,
         fromAddress: dropoff,
@@ -444,7 +445,7 @@ const Fleets = () => {
                         </label>
                         <select
                           name="form_fields[gender]"
-                          onChange={(e) => setEmail(e.target.value)}
+                          onChange={(e) => setDriverGender(e.target.value)}
                           className="elementor-field elementor-size-sm  elementor-field-textual"
                         >
                           <option value="">Select Driver Gender</option>
