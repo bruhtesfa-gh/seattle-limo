@@ -275,7 +275,8 @@ const Services = () => {
                 <div className="service-overlay" />
                 <img
                   style={{
-                    objectFit: "contain",
+                    width: "100%",
+                    maxHeight: 400,
                   }}
                   src={img}
                   alt=""
