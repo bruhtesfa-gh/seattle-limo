@@ -555,7 +555,7 @@ const Fleets = () => {
                           name="form_fields[message]"
                           id="form-field-message"
                           rows={4}
-                          placeholder="Event or Occasion"
+                          placeholder="Comments"
                           defaultValue={""}
                           onChange={(e) => setComments(e.target.value)}
                         />
