@@ -903,7 +903,7 @@ body .elementor-90 .elementor-element.elementor-element-6eb9e7af .elementor-labe
 }
 
 .elementor-image-box-link {
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     bottom: 0.5em;
 }
