@@ -14,7 +14,9 @@ const Services = () => {
         setLoading(false);
         let services = [];
         for (let i = 0; i < res.length; i += 2) {
+          console.log("step")
           if (i + 1 < res.length) {
+            console.log("concat")
             const subarray = [res[i], res[i + 1]];
             services.push(subarray);
           }
