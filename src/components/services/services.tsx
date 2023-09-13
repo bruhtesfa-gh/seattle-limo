@@ -283,6 +283,7 @@ const Services = () => {
                 />
                 <h3 className="service-title">
                   {text}
+                  text
                   {/* <Link to={""}>{}</Link> */}
                 </h3>
               </Link>
