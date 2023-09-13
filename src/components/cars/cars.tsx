@@ -89,21 +89,21 @@ const Cars = (props: any) => {
                                                          alt={car.name}
                                                          loading="lazy"
                                                       />
-                                                      <div className="elementor-image-box-link">
-                                                         <Link
-                                                            className="elementor-button elementor-button-book elementor-button-link elementor-size-sm "
-                                                            to={`/fleets/${car.id}`}
-                                                         >
-                                                            <span className="elementor-button-content-wrappe">
-                                                               <span className="elementor-button-text">
-                                                                  Book now
-                                                               </span>
-                                                            </span>
-                                                         </Link>
-                                                      </div>
                                                    </div>
                                                 </figure>
                                                 <div className="elementor-image-box-content">
+                                                   <div className="elementor-image-box-link">
+                                                      <Link
+                                                         className="elementor-button elementor-button-book elementor-button-link elementor-size-sm "
+                                                         to={`/fleets/${car.id}`}
+                                                      >
+                                                         <span className="elementor-button-content-wrappe">
+                                                            <span className="elementor-button-text">
+                                                               Book now
+                                                            </span>
+                                                         </span>
+                                                      </Link>
+                                                   </div>
                                                    <h3 className="elementor-image-box-title">
                                                       {car.name}
                                                    </h3>
