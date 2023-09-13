@@ -12,7 +12,14 @@ const Services = () => {
     getServices()
       .then((res) => {
         setLoading(false);
-        setServices(res);
+        let services = [];
+        for (let i = 0; i < res.length; i += 2) {
+          if (i + 1 < res.length) {
+            const subarray = [res[i], res[i + 1]];
+            services.push(subarray);
+          }
+        }
+        setServices(services);
       })
       .catch((err) => {
         setLoading(false);
@@ -265,31 +272,66 @@ const Services = () => {
         </div>
       </section>
       {/*  */}
-      <section className="services-container">
-        {loading ? (
-          <Spinner />
-        ) : (
-          services.map(({ img, text, id }) => {
-            return (
-              <Link to={String(id)} className="service-container">
-                <div className="service-overlay" />
-                <img
-                  style={{
-                    width: "100%",
-                    maxHeight: 400,
-                  }}
-                  src={img}
-                  alt=""
-                />
-                <h3 className="service-title">
-                  {text}
-                  text
-                  {/* <Link to={""}>{}</Link> */}
-                </h3>
-              </Link>
-            );
-          })
-        )}
+      <section
+        className="elementor-section elementor-top-section elementor-element elementor-element-248e4c72 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+        data-id="248e4c72"
+        data-element_type="section"
+        data-settings='{"stretch_section":"section-stretched"}'
+      >
+        {
+          loading ? (<Spinner />) : (
+            services.map((flat_services: [any], index: number) => {
+              return <div className="elementor-container elementor-column-gap-default" key={index}>
+                {
+                  flat_services.map((s, i) => {
+                    const containerStyle = {
+                      backgroundImage: `url(${s.img})`,
+                      backgroundPosition: 'center center',
+                      backgroundSize: 'cover', // Adjust to your preference
+                      backgroundRepeat: 'no-repeat', // Adjust to your preference
+                      // You can set other background properties here
+                    }
+                    return <div
+                      className="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-5ed72bb9"
+                      data-id="5ed72bb9"
+                      data-element_type="column"
+                      data-settings='{"background_background":"classic"}'
+                      key={i + " " + index}
+                    >
+                      <div className="elementor-widget-wrap elementor-element-populated">
+                        <div className="elementor-background-overlay" style={containerStyle} />
+                        <div
+                          className="elementor-element elementor-element-55049ecb elementor-widget elementor-widget-heading"
+                          data-id="55049ecb"
+                          data-element_type="widget"
+                          data-widget_type="heading.default"
+                        >
+                          <div className="elementor-widget-container">
+                            <h3 className="elementor-heading-title elementor-size-default">
+                              <Link to={""} >Airport Transportation</Link>
+                            </h3>
+                          </div>
+                        </div>
+                        <div
+                          className="elementor-element elementor-element-20f441a8 elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
+                          data-id="20f441a8"
+                          data-element_type="widget"
+                          data-widget_type="divider.default"
+                        >
+                          <div className="elementor-widget-container">
+                            <div className="elementor-divider">
+                              <span className="elementor-divider-separator"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  })
+                }
+              </div>
+            })
+          )
+        }
       </section>
     </div>
   );
