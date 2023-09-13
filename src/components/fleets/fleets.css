@@ -105,7 +105,7 @@
 }
 
 .elementor-image-box-link {
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     bottom: 0.5em;
 }
