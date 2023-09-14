@@ -19,7 +19,7 @@ function Service() {
       setServices(res.slice(0, 3).map((item: any) => {
         return {
           id: item.id,
-          title: item.title.split(':')[0],
+          title: item.title,
         }
       }));
       setLoading(false);
@@ -364,12 +364,12 @@ function Service() {
                     />
                     <div className="elementor-posts-container elementor-posts elementor-posts--skin-classic elementor-grid">
                       {
-                        services.map((blog: any, index: number) => {
+                        services.map((s: any, index: number) => {
                           return <article key={`re-${index}`} className="elementor-post elementor-grid-item post-99 post type-post status-publish format-standard has-post-thumbnail hentry category-tour">
                             <div className="elementor-post__text">
                               <h3 className="elementor-post__title">
-                                <Link to={`/services/${service.id}`}>
-                                  {service.title}{" "}
+                                <Link to={`/services/${s.id}`}>
+                                  {s.title}{" "}
                                 </Link>
                               </h3>
                             </div>
