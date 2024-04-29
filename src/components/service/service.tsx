@@ -24,6 +24,7 @@ function Service() {
       }));
       setLoading(false);
     }).catch((err) => {
+      // console && console.error will be thrown
       setError(true);
       setLoading(false);
     });
@@ -36,6 +37,8 @@ function Service() {
       setService(allServices.find((item: any) => item.id == slug));
     }
   }, [slug]);
+
+
 
   return <div
     data-elementor-type="single"

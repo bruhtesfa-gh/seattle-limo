@@ -26,7 +26,7 @@ const Contact = () => {
         }
 
         axios.post(
-            'https://seattle-skyline-limo-server.onrender.com/mail',
+            'https://seattle-skyline-limo-server.watemtrade.com/mail',
             {
                 name,
                 email,
