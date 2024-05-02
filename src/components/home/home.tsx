@@ -157,9 +157,9 @@ const Home = () => {
                             <div className="elementor-widget-container">
                                 <img
                                     decoding="async"
-                                    src="/images/ildar-garifullin-aAEe0jM1vno-unsplash-scaled-1-prlpahlbnylii26zd7tw9uvwwxmco7z5i6ru9d3wic.jpg"
-                                    title="ildar-garifullin-aAEe0jM1vno-unsplash-scaled.jpg"
-                                    alt="ildar-garifullin-aAEe0jM1vno-unsplash-scaled.jpg"
+                                    src="/images/slider2.e08b66b855191ba2296e.png"
+                                    title="slider2.e08b66b855191ba2296e.png"
+                                    alt="slider2.e08b66b855191ba2296e.png"
                                     loading="lazy"
                                 />
                             </div>
@@ -520,11 +520,11 @@ const Home = () => {
                                     decoding="async"
                                     width={2560}
                                     height={1706}
-                                    src="/images/ildar-garifullin-aAEe0jM1vno-unsplash-scaled-1-2048x1365.jpg"
+                                    src="/images/slider2.e08b66b855191ba2296e.png"
                                     className="attachment-full size-full wp-image-56"
                                     alt=""
                                     loading="lazy"
-                                    srcSet="/images/ildar-garifullin-aAEe0jM1vno-unsplash-scaled-1-2048x1365.jpg 2560w, /images/ildar-garifullin-aAEe0jM1vno-unsplash-scaled-1-2048x1365.jpg 300w, /images/ildar-garifullin-aAEe0jM1vno-unsplash-scaled-1-2048x1365.jpg 1024w, /images/ildar-garifullin-aAEe0jM1vno-unsplash-scaled-1-2048x1365.jpg 768w, /images/ildar-garifullin-aAEe0jM1vno-unsplash-scaled-1-2048x1365.jpg 1536w, /images/ildar-garifullin-aAEe0jM1vno-unsplash-scaled-1-2048x1365.jpg 2048w"
+                                    srcSet="/images/slider2.e08b66b855191ba2296e.png 2560w, /images/slider2.e08b66b855191ba2296e.png 300w, /images/slider2.e08b66b855191ba2296e.png 1024w, /images/slider2.e08b66b855191ba2296e.png 768w, /images/slider2.e08b66b855191ba2296e.png 1536w, /images/slider2.e08b66b855191ba2296e.png 2048w"
                                     sizes="(max-width: 2560px) 100vw, 2560px"
                                 />
                             </div>
