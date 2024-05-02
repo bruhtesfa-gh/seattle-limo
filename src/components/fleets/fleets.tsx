@@ -71,7 +71,7 @@ const Fleets = () => {
       }
     } catch (error: any) {
       console.log(error);
-      toast.error(error.response?.data, {
+      toast.error('The system is under maintenance. Please try again later.', {
         position: "top-right",
         autoClose: 5000,
         hideProgressBar: false,

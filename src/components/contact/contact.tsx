@@ -38,7 +38,7 @@ const Contact = () => {
             window.location.reload();
             console.log(response);
         }, (error) => {
-            toast.error('Something went wrong');
+            toast.error('The system is under maintenance. Please try again later.');
             console.log(error);
         });
     };
