@@ -1,5 +1,5 @@
 import * as ax from "axios";
-export const BASE_URL = "https://seattle-skyline-limo-server.watemtrade.com/";
+export const BASE_URL = "https://abc-limo-server.watemtrade.com/";
 const axios = ax.default.create({
   baseURL: BASE_URL,
 });
@@ -17,7 +17,7 @@ export async function getBlogs(page = 1, limit = 3) {
   return data;
 }
 export async function getServices(page = 1, limit = 3) {
-  const { data } = await axios.get(`/service?page=${page}&limit=${limit} `);
+  const { data } = await axios.get(`/services?page=${page}&limit=${limit} `);
   return data;
 }
 
@@ -26,7 +26,7 @@ export async function getBlog(id: any) {
   return data;
 }
 export async function getService(id: any) {
-  const { data } = await axios.get(`/service/${id}`);
+  const { data } = await axios.get(`/services/${id}`);
   return data;
 }
 
