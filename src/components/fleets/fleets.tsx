@@ -312,16 +312,16 @@ const Fleets = () => {
                     data-element_type="widget"
                     data-widget_type="image.default"
                   >
-                    <div className="elementor-widget-container">
+                    <div className="elementor-widget-container" style={{ width: "100%", height: "500px" }}>
                       <img
                         decoding="async"
-                        width={2560}
-                        height={1707}
+                        // width={2560}
+                        // height={1707}
                         src={
                           bookingVehicle.id &&
                           bookingVehicle.img.replace("http:", "https:")
                         }
-                        className="attachment-full size-full wp-image-57"
+                        // className="attachment-full size-full wp-image-57"
                         alt=""
                         loading="lazy"
                         srcSet={
@@ -331,7 +331,8 @@ const Fleets = () => {
                             "https:"
                           )} 2560w`
                         }
-                        sizes="(max-width: 2560px) 100vw, 2560px"
+                      // sizes="(max-width: 2560px) 100vw, 2560px"
+                      // style={{ width: "100%", height: "1000px !important" }}
                       />{" "}
                     </div>
                   </div>

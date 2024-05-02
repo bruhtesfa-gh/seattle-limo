@@ -88,6 +88,12 @@ const Cars = (props: any) => {
                                                          title={car.name}
                                                          alt={car.name}
                                                          loading="lazy"
+                                                         style={{
+                                                            objectFit: "contain",
+                                                            width: "100%",
+                                                            height: "200px"
+
+                                                         }}
                                                       />
                                                    </div>
                                                 </figure>
